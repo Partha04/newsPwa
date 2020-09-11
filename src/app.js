@@ -22,7 +22,7 @@ const App = () => {
       pagesize:40,
     };
    await axios.get(
-     `https://newsapi.org/v2/top-headlines`,
+     `https://cors-anywhere.herokuapp.com/https://newsapi.org/v2/top-headlines`,
       {
         
         headers: {
@@ -46,13 +46,9 @@ const App = () => {
       apiKey:"0cc387f4b77f4ed88b4989e9d38b9c21"
     };
     await axios.get(
-   `https://newsapi.org/v2/everything`,
+   `https://cors-anywhere.herokuapp.com/https://newsapi.org/v2/everything`,
    {
         crossDomain: true,
-        headers: {
-          'Access-Control-Allow-Origin': '*'
-        },
-
         params:p
       } )
     .then(artices=>{
