@@ -1,0 +1,17 @@
+{
+    "short_name":"NEWS",
+    "name":"News PWA",
+    "icons":[{
+        "src":"/images/logo.png",
+        "type":"image/png",
+        "sizes":"1024x1024"
+    }],
+    "start_url":".",
+    "display":"standalone",
+    "theme_color":"#000000",
+    "background_color":"#ffffff",
+    "permissions": [
+        "https://gifted-jepsen-e06e0f.netlify.app/*",
+        "https://example.com/*"
+     ]
+}
